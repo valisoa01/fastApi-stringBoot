@@ -1,6 +1,8 @@
 
 #TP : Migration d'une API de Gestion de Réservations (FastAPI vers Spring Boot)#
+
 📌 Présentation du Projet
+
 Ce projet consiste à migrer une API REST de gestion de réservations hôtelières initialement conçue avec FastAPI vers le framework Spring Boot. L'objectif est de mettre en pratique les concepts fondamentaux de Spring Boot (Controllers, Services, Modèles) tout en respectant les contraintes métier d'une évaluation académique (PROG2-API).
 
 📖 Contexte Métier
