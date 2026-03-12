@@ -20,12 +20,15 @@ public class BookingController {
         return bookingService.getBookings();
     }
     @PostMapping
-    public ResponseEntity<String> createBooking(@RequestBody Booking booking) {
+    public ResponseEntity<?> createBooking(@RequestBody Booking booking) {
         try{
             List<Booking> result = bookingService.createBooking(booking);
-            return ResponseEntity.ok(result.toString());
-        } catch (IllegalArgumentException e)
-        {
+            return ResponseEntity.ok(result);
+        }
+        catch (IllegalArgumentException e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+        catch (IllegalStateException e){
             return ResponseEntity.status(409).body(e.getMessage());
         }
     }

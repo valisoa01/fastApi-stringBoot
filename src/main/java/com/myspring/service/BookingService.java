@@ -1,7 +1,6 @@
 package com.myspring.service;
 
 import com.myspring.model.Booking;
-import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
